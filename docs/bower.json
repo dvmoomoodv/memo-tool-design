@@ -1,0 +1,15 @@
+{
+  "name": "memo-tool-design",
+  "description": "memo-tool-design",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/dvmoomoodv/memo-tool-design",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

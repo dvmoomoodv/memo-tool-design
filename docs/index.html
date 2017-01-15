@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://www.iconarchive.com/download/i42608/oxygen-icons.org/oxygen/Actions-document-edit.ico">
+    <title>Memo tools</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="/node_modules/angular/angular.min.js"></script>
+
+    <link href="/custom/style.css" rel="stylesheet">
+    <script src="/custom/script.js"></script>
+  </head>
+
+  <body ng-app="app" ng-controller="ctrl" ng-init="init()">
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+      <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <a class="navbar-brand" href="#">Memo tools</a>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div> -->
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Memo tools</h1>
+        <p class="lead">
+          <div class="input-group">
+            <span class="input-group-addon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <!-- <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="searchText"> -->
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter Tag" ng-model="search.tag">
+          </div>
+        </p>
+        <hr>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3" ng-repeat="memo in memos | filter:search:strict">
+            <div class="memo-box">
+              <h3>{{memo.title}}</h3>
+              <h5>{{memo.content}}</h5>
+              <h6>{{memo.tag}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+  </body>
+</html>
