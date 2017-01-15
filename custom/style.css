@@ -1,0 +1,14 @@
+.navbar{
+  background-color : #E91E63;
+}
+.container{
+  padding : 80px 0px;
+}
+.memo-box{
+  margin : 3px;
+  padding : 5px;
+  min-height:100px;
+  border : 2px solid #757575;
+  border-top-right-radius : 10px;
+  box-shadow: 2px 2px 2px #DDD;
+}
