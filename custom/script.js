@@ -8,7 +8,5 @@ app.controller('ctrl', ["$scope", function($scope) {
                   {title:'외래키', content:'외래키는 다른 릴레이션의 기본키를 참조하는 속성 또는 속성들의 집합을 의미한다.외래키는 릴레이션 간의 관계를 표현할 때 사용한다.한 릴레이션에 속한 속성 A와 참조 릴레이션의 기본키인 B가 동일한 도메인상에서 정의되었을 때의 속성 A를 외래키라고 한다.외래키는 참조 릴레이션의 기본키와 동일한 키 속성을 가진다.', tag:'외래키,릴레이션,도메인상,속성'}
                ];
   $scope.init = function(){
-      $scope.toShow = "subnav-manage";
-      $(".hide").removeClass("hide");
   };
 }]);
