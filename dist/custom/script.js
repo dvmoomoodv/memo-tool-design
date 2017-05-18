@@ -9,4 +9,10 @@ app.controller('ctrl', ["$scope", function($scope) {
                ];
   $scope.init = function(){
   };
+
+  $scope.goPage = function(page){
+    if(page == "write"){
+      location.href = "write.html";
+    }
+  }
 }]);
